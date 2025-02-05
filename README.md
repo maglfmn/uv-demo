@@ -18,12 +18,18 @@ Python will already be set for you!
 Add the `wat` and `whenever` packages (the former to the `dev` dependency group) to the
 `pyproject.toml` file.
 ```
-uv add --dev wat
+uv add --dev ruff
 uv add whenever
 ```
 (Note, this will automatically add the virtual environment, too)
 
-Activate your environment!
+Activate your environment! (although, you don't even need this)
 ```
 . .venv/bin/activate
 ```
+
+Run `ruff`:
+```bash
+uv run ruff format .
+```
+
